@@ -291,12 +291,7 @@ return [
 
     'menu' => [
         //Data menu
-        [
-            'text' => 'Buku',
-            'url' => 'admin/books',
-            'icon' => 'fas fa-fw fa-book',
-            'can' => 'isAdmin',
-        ],
+
         // Navbar items:
         [
             'type'         => 'navbar-search',
@@ -328,8 +323,9 @@ return [
         ['header' => 'account_settings'],
         [
             'text' => 'Book',
-            'url'  => 'admin/book',
+            'url'  => 'admin/books',
             'icon' => 'fas fa-fw fa-book',
+            'can' => 'isAdmin',
         ],
         [
             'text' => 'profile',
