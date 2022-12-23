@@ -17,7 +17,7 @@
 
                 $.ajax({
                     type: "get",
-                    url: "{{url('admin/ajaxadmin/dataBuku')}}/"+id,
+                    url: "{{url('/admin/ajaxadmin/dataBuku')}}/"+id,
                     dataType: 'json',
                     success: function(res){
                         $('#edit-judul').val(res.judul);

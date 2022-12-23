@@ -43,6 +43,7 @@ class BookController extends Controller
             $req->file('cover')->storeAs(
                 'public/cover_buku', $filename
             );
+
             $validated['cover'] = $filename;
         }
 
